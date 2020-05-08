@@ -15,6 +15,7 @@
 		D678AFC824643C5500A1DBD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D678AFC624643C5500A1DBD4 /* LaunchScreen.storyboard */; };
 		D678AFD324643C5500A1DBD4 /* galleryPhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678AFD224643C5500A1DBD4 /* galleryPhotoTests.swift */; };
 		D678AFDE24643C5500A1DBD4 /* galleryPhotoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678AFDD24643C5500A1DBD4 /* galleryPhotoUITests.swift */; };
+		D678B028246454E700A1DBD4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678B027246454E700A1DBD4 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D678AFD924643C5500A1DBD4 /* galleryPhotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = galleryPhotoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D678AFDD24643C5500A1DBD4 /* galleryPhotoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = galleryPhotoUITests.swift; sourceTree = "<group>"; };
 		D678AFDF24643C5500A1DBD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D678B027246454E700A1DBD4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				D678AFBD24643C5200A1DBD4 /* SceneDelegate.swift */,
 				D678AFBF24643C5200A1DBD4 /* ViewController.swift */,
 				D678AFC124643C5200A1DBD4 /* Main.storyboard */,
+				D678B027246454E700A1DBD4 /* CollectionViewCell.swift */,
 				D678AFC424643C5500A1DBD4 /* Assets.xcassets */,
 				D678AFC624643C5500A1DBD4 /* LaunchScreen.storyboard */,
 				D678AFC924643C5500A1DBD4 /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				D678AFC024643C5200A1DBD4 /* ViewController.swift in Sources */,
 				D678AFBC24643C5200A1DBD4 /* AppDelegate.swift in Sources */,
+				D678B028246454E700A1DBD4 /* CollectionViewCell.swift in Sources */,
 				D678AFBE24643C5200A1DBD4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
