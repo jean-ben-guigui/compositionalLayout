@@ -83,6 +83,7 @@
 		D678AFAF24643C5200A1DBD4 = {
 			isa = PBXGroup;
 			children = (
+				D6E2A74F24686EFA00CE55E3 /* README.md */,
 				D678AFBA24643C5200A1DBD4 /* compositionalLayout */,
 				D678AFD124643C5500A1DBD4 /* compositionalLayoutTests */,
 				D678AFDC24643C5500A1DBD4 /* compositionalLayoutUITests */,
@@ -112,7 +113,6 @@
 				D678AFC424643C5500A1DBD4 /* Assets.xcassets */,
 				D678AFC624643C5500A1DBD4 /* LaunchScreen.storyboard */,
 				D678AFC924643C5500A1DBD4 /* Info.plist */,
-				D6E2A74F24686EFA00CE55E3 /* README.md */,
 			);
 			path = compositionalLayout;
 			sourceTree = "<group>";
