@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:galleryPhoto.xcodeproj">
+      location = "self:/Users/arthurbananas/work/git/galleryPhoto/CompositionalLayout.xcodeproj">
    </FileRef>
 </Workspace>

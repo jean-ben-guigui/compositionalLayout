@@ -16,6 +16,7 @@
 		D678AFD324643C5500A1DBD4 /* galleryPhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678AFD224643C5500A1DBD4 /* galleryPhotoTests.swift */; };
 		D678AFDE24643C5500A1DBD4 /* galleryPhotoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678AFDD24643C5500A1DBD4 /* galleryPhotoUITests.swift */; };
 		D678B028246454E700A1DBD4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678B027246454E700A1DBD4 /* CollectionViewCell.swift */; };
+		D6E2A75024686EFA00CE55E3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D6E2A74F24686EFA00CE55E3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D678AFB824643C5200A1DBD4 /* galleryPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = galleryPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D678AFB824643C5200A1DBD4 /* CompositionalLayoutt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompositionalLayoutt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D678AFBB24643C5200A1DBD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D678AFBD24643C5200A1DBD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D678AFBF24643C5200A1DBD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		D678AFDD24643C5500A1DBD4 /* galleryPhotoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = galleryPhotoUITests.swift; sourceTree = "<group>"; };
 		D678AFDF24643C5500A1DBD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D678B027246454E700A1DBD4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		D6E2A74F24686EFA00CE55E3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +94,7 @@
 		D678AFB924643C5200A1DBD4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D678AFB824643C5200A1DBD4 /* galleryPhoto.app */,
+				D678AFB824643C5200A1DBD4 /* CompositionalLayoutt.app */,
 				D678AFCE24643C5500A1DBD4 /* galleryPhotoTests.xctest */,
 				D678AFD924643C5500A1DBD4 /* galleryPhotoUITests.xctest */,
 			);
@@ -110,6 +112,7 @@
 				D678AFC424643C5500A1DBD4 /* Assets.xcassets */,
 				D678AFC624643C5500A1DBD4 /* LaunchScreen.storyboard */,
 				D678AFC924643C5500A1DBD4 /* Info.plist */,
+				D6E2A74F24686EFA00CE55E3 /* README.md */,
 			);
 			path = galleryPhoto;
 			sourceTree = "<group>";
@@ -149,7 +152,7 @@
 			);
 			name = galleryPhoto;
 			productName = galleryPhoto;
-			productReference = D678AFB824643C5200A1DBD4 /* galleryPhoto.app */;
+			productReference = D678AFB824643C5200A1DBD4 /* CompositionalLayoutt.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D678AFCD24643C5500A1DBD4 /* galleryPhotoTests */ = {
@@ -211,7 +214,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D678AFB324643C5200A1DBD4 /* Build configuration list for PBXProject "galleryPhoto" */;
+			buildConfigurationList = D678AFB324643C5200A1DBD4 /* Build configuration list for PBXProject "CompositionalLayout" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -238,6 +241,7 @@
 			files = (
 				D678AFC824643C5500A1DBD4 /* LaunchScreen.storyboard in Resources */,
 				D678AFC524643C5500A1DBD4 /* Assets.xcassets in Resources */,
+				D6E2A75024686EFA00CE55E3 /* README.md in Resources */,
 				D678AFC324643C5200A1DBD4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,7 +451,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arthurduver.galleryPhoto;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CompositionalLayoutt;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -465,7 +469,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arthurduver.galleryPhoto;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CompositionalLayoutt;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -558,7 +562,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D678AFB324643C5200A1DBD4 /* Build configuration list for PBXProject "galleryPhoto" */ = {
+		D678AFB324643C5200A1DBD4 /* Build configuration list for PBXProject "CompositionalLayout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D678AFE024643C5500A1DBD4 /* Debug */,
