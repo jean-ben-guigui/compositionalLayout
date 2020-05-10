@@ -40,6 +40,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="3Ke-uc-ZFA" firstAttribute="centerY" secondItem="9EO-rf-al5" secondAttribute="centerY" id="KZF-Dc-Qum"/>
                                                 <constraint firstItem="3Ke-uc-ZFA" firstAttribute="centerX" secondItem="9EO-rf-al5" secondAttribute="centerX" id="XQC-fd-JT4"/>

@@ -87,6 +87,7 @@
 				D678AFB924643C5200A1DBD4 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		D678AFB924643C5200A1DBD4 /* Products */ = {
 			isa = PBXGroup;
