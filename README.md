@@ -8,5 +8,5 @@ https://medium.com/@letresbelhomme/compositionalcollection-view-compositional-la
 You will need a mac with Xcode installed on it. You'll need a version of Xcode that can run swift 5.
 
 ### Installing
-- Open galleryPhoto.xcproj with Xcode.
+- Open compositionalLayout.xcproj with Xcode.
 - Command + R to run the project.
