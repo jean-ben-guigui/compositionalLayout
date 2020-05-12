@@ -1,6 +1,6 @@
 # CompositionalLayouts with storyboards
 A project to illustrate my medium post about compositional layout:
-https://medium.com/@letresbelhomme/compositionalcollection-view-compositional-layouts-with-storyboards-e4ae7352896c
+https://medium.com/@arthurDuver/compositionalcollection-view-compositional-layouts-with-storyboards-e4ae7352896c?source=friends_link&sk=9829e2ae23e0f5436c4412fb0254abe1
 
 ## Getting started
 
