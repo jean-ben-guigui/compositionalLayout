@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         case main
     }
     
-    var dataSource: UICollectionViewDiffableDataSource<Section, Int>! = nil
+    var dataSource: UICollectionViewDiffableDataSource<Int, Int>!
     
     //MARK: - Outlets
     @IBOutlet weak var collectionView: UICollectionView!
@@ -28,31 +28,61 @@ class ViewController: UIViewController {
         configureLayout()
     }
     
-    private func configureDataSource() {
-        dataSource = UICollectionViewDiffableDataSource<Section, Int>(collectionView: collectionView) {
-            (collectionView: UICollectionView, indexPath: IndexPath, identifier: Int) -> UICollectionViewCell? in
+private func configureDataSource() {
+    dataSource = UICollectionViewDiffableDataSource<Int, Int>(collectionView: collectionView) {
+        (collectionView: UICollectionView, indexPath: IndexPath, identifier: Int) -> UICollectionViewCell? in
+        
+        // Get a cell of the desired kind.
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: CollectionViewCell.identifier,
+            for: indexPath) as? CollectionViewCell else { fatalError("Cannot create new cell") }
+        
+        // Populate the cell with our item description.
+        cell.title.text = "\(identifier)"
+        
+        // Make the corner of the cells round and sexy
+        cell.contentView.layer.cornerRadius = 8
+        
+        // Return the cell.
+        return cell
+    }
+    
+    dataSource?.supplementaryViewProvider = {
+        (
+        collectionView: UICollectionView,
+        kind: String,
+        indexPath: IndexPath
+        ) -> UICollectionReusableView? in
+        
+        // Get a supplementary view of the desired kind.
+        if kind == UICollectionView.elementKindSectionHeader {
+            guard let header = collectionView.dequeueReusableSupplementaryView(
+                ofKind: UICollectionView.elementKindSectionHeader,
+                withReuseIdentifier: HeaderView.identifier,
+                for: indexPath) as? HeaderView else { fatalError("Cannot create new supplementary") }
             
-            // Get a cell of the desired kind.
-            guard let cell = collectionView.dequeueReusableCell(
-                withReuseIdentifier: CollectionViewCell.identifier,
-                for: indexPath) as? CollectionViewCell else { fatalError("Cannot create new cell") }
+            // Populate the view with our data.
+            header.titleLabel.text = String(indexPath.section)
             
-            // Populate the cell with our item description.
-            cell.title.text = "\(identifier)"
-            
-            // Make the corner of the cells round and sexy
-            cell.contentView.layer.cornerRadius = 8
-            
-            // Return the cell.
-            return cell
+            return header
         }
         
-        // initial data
-        var snapshot = NSDiffableDataSourceSnapshot<Section, Int>()
-        snapshot.appendSections([.main])
-        snapshot.appendItems(Array(0..<94))
-        dataSource.apply(snapshot, animatingDifferences: false)
+        // Return the view.
+        fatalError("failed to get supplementary view")
     }
+    
+    let itemsPerSection = 10
+    let sections = Array(0..<10)
+    var snapshot = NSDiffableDataSourceSnapshot<Int, Int>()
+    var itemOffset = 0
+    sections.forEach {
+        snapshot.appendSections([$0])
+        snapshot.appendItems(Array(itemOffset..<itemOffset + itemsPerSection))
+        itemOffset += itemsPerSection
+    }
+    
+    dataSource.apply(snapshot, animatingDifferences: false)
+}
     
     func configureLayout() {
         //1
@@ -147,6 +177,16 @@ class ViewController: UIViewController {
                                                                                               heightDimension: .fractionalHeight(0.3)), subitems: [topNestedGroup, bottomNestedGroup])
         nestedGroup.contentInsets = NSDirectionalEdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0)
         let section = NSCollectionLayoutSection(group: nestedGroup)
+        
+        //5
+        let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                                      heightDimension: .estimated(44))
+        let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
+            layoutSize: headerSize,
+            elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
+        sectionHeader.pinToVisibleBounds = true
+        section.boundarySupplementaryItems = [sectionHeader]
+        
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
     }

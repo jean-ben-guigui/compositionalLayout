@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D64E458024828F2600F720CE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64E457F24828F2600F720CE /* HeaderView.swift */; };
 		D678AFBC24643C5200A1DBD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678AFBB24643C5200A1DBD4 /* AppDelegate.swift */; };
 		D678AFBE24643C5200A1DBD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678AFBD24643C5200A1DBD4 /* SceneDelegate.swift */; };
 		D678AFC024643C5200A1DBD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D678AFBF24643C5200A1DBD4 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D64E457F24828F2600F720CE /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		D678AFB824643C5200A1DBD4 /* CompositionalLayoutt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompositionalLayoutt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D678AFBB24643C5200A1DBD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D678AFBD24643C5200A1DBD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				D678AFBD24643C5200A1DBD4 /* SceneDelegate.swift */,
 				D678AFBF24643C5200A1DBD4 /* ViewController.swift */,
 				D678AFC124643C5200A1DBD4 /* Main.storyboard */,
+				D64E457F24828F2600F720CE /* HeaderView.swift */,
 				D678B027246454E700A1DBD4 /* CollectionViewCell.swift */,
 				D678AFC424643C5500A1DBD4 /* Assets.xcassets */,
 				D678AFC624643C5500A1DBD4 /* LaunchScreen.storyboard */,
@@ -267,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D64E458024828F2600F720CE /* HeaderView.swift in Sources */,
 				D678AFC024643C5200A1DBD4 /* ViewController.swift in Sources */,
 				D678AFBC24643C5200A1DBD4 /* AppDelegate.swift in Sources */,
 				D678B028246454E700A1DBD4 /* CollectionViewCell.swift in Sources */,
