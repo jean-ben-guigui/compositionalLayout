@@ -67,6 +67,18 @@ private func configureDataSource() {
             return header
         }
         
+        if kind == UICollectionView.elementKindSectionFooter {
+            guard let footer = collectionView.dequeueReusableSupplementaryView(
+                ofKind: UICollectionView.elementKindSectionFooter,
+                withReuseIdentifier: FooterView.identifier,
+                for: indexPath) as? FooterView else { fatalError("Cannot create new supplementary") }
+            
+            // Populate the view with our data.
+            footer.titleLabel.text = String(indexPath.section)
+            
+            return footer
+        }
+        
         // Return the view.
         fatalError("failed to get supplementary view")
     }
@@ -185,7 +197,16 @@ private func configureDataSource() {
             layoutSize: headerSize,
             elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
         sectionHeader.pinToVisibleBounds = true
-        section.boundarySupplementaryItems = [sectionHeader]
+        
+        //6
+        let footerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+                                                      heightDimension: .estimated(44))
+        let sectionFooter = NSCollectionLayoutBoundarySupplementaryItem(
+            layoutSize: footerSize,
+            elementKind: UICollectionView.elementKindSectionFooter, alignment: .bottom)
+        sectionFooter.pinToVisibleBounds = true
+        
+        section.boundarySupplementaryItems = [sectionHeader, sectionFooter]
         
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
